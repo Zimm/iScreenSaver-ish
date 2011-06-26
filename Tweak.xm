@@ -21,9 +21,9 @@
 	[UIView commitAnimations];
 }
 
--(void)resetIdleDuration:(double)duration
+-(double)nextLockTimeDuration
 {
-	%orig(30.0);
+	return %orig + 30;
 }
 
 %end
