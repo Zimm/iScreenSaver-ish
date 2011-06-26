@@ -1,0 +1,9 @@
+Package: com.thezimm.iScreenSaver
+Depends: mobilesubstrate
+Name: iScreenSaver
+Version: 0.1
+Architecture: iphoneos-arm
+Description: Screensaver before dims
+Author: Dan Zimmerman <daniel.zimmerman@me.com>
+Section: Tweaks
+dev: thezimm
