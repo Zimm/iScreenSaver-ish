@@ -8,7 +8,7 @@
 {
 	%orig;
 	[UIView beginAnimations:nil context:NULL];
-	[[[objc_getClass("SBIconController") sharedInstance] contentView] setAlpha:0.0f];
+	[[[%c(SBIconController) sharedInstance] contentView] setAlpha:0.0f];
 	[UIView commitAnimations];
 }
 
@@ -17,8 +17,13 @@
 {
 	%orig;
 	[UIView beginAnimations:nil context:NULL];
-	[[[objc_getClass("SBIconController") sharedInstance] contentView] setAlpha:1.0f];
+	[[[%c(SBIconController) sharedInstance] contentView] setAlpha:1.0f];
 	[UIView commitAnimations];
+}
+
+-(void)resetIdleDuration:(double)duration
+{
+	%orig(30.0);
 }
 
 %end
@@ -28,7 +33,7 @@
 -(void)unlockWithSound:(BOOL)sound
 {
 	%orig;
-	[[[objc_getClass("SBIconController") sharedInstance] contentView] setAlpha:1.0f];
+	[[[%c(SBIconController) sharedInstance] contentView] setAlpha:1.0f];
 }
 
 %end

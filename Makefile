@@ -4,5 +4,5 @@ TWEAK_NAME = iScreenSaver
 iScreenSaver_FILES = Tweak.xm
 iScreenSaver_FRAMEWORKS = Foundation UIKit
 
-include framework/makefiles/common.mk
-include framework/makefiles/tweak.mk
+include theos/makefiles/common.mk
+include theos/makefiles/tweak.mk
